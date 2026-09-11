@@ -1,0 +1,23 @@
+doctype html
+html
+    head
+        title= title
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        h1 Movie Characters
+
+        a(href="/update-cobj") Add to this table
+
+        table
+            thead
+                tr
+                    th Name
+                    th Character Type
+                    th Description
+
+            tbody
+                each character in data
+                    tr
+                        td= character.properties.name
+                        td= character.properties.character_type
+                        td= character.properties.description

@@ -1,0 +1,24 @@
+doctype html
+html
+    head
+        title= title
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        h1 Add Movie Character
+
+        a(href="/") Return to the homepage
+
+        form(action="/update-cobj", method="POST")
+            div
+                label(for="name") Name
+                input(type="text", id="name", name="name", required=true)
+
+            div
+                label(for="character_type") Character Type
+                input(type="text", id="character_type", name="character_type", required=true)
+
+            div
+                label(for="description") Description
+                input(type="text", id="description", name="description", required=true)
+
+            button(type="submit") Add Character
